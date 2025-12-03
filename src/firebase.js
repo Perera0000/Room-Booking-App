@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDtglOWdZqys1i2UldlVHXY5V5d9PNaQDc",
+    apiKey: "Your_API_Key",
     authDomain: "room-management-firstapp.firebaseapp.com",
     projectId: "room-management-firstapp",
     storageBucket: "room-management-firstapp.firebasestorage.app",
