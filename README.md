@@ -1,16 +1,85 @@
-# React + Vite
+# Room Rent Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, premium-designed web application for managing room rentals, built with React and Firebase.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This application allows property managers to easily track room availability, manage bookings, and view occupancy status at a glance. It features a responsive, glassmorphism-inspired UI and real-time data persistence using Firebase Firestore.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **📊 Interactive Dashboard**: View all rooms and their real-time status (Available/Occupied).
+- **🏨 Room Management**: Add new rooms with details like type, price, and amenities.
+- **📅 Booking System**: Seamlessly book rooms with guest details and date ranges.
+- **⏳ Availability Tracking**: Automatic calculation of "Days Left" for occupied rooms.
+- **☁️ Cloud Persistence**: All data is securely stored in Firebase Firestore.
+- **🎨 Premium Design**: Custom Vanilla CSS styling with dark mode and glassmorphism effects.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React (Vite)
+- **Styling**: Vanilla CSS (Variables, Flexbox/Grid, Animations)
+- **Database**: Firebase Firestore
+- **Deployment**: Firebase Hosting
+- **Icons**: Lucide React
+- **Date Handling**: date-fns
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd room-booking
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running Locally
+
+Start the development server:
+```bash
+npm run dev
+```
+The app will be available at `http://localhost:5173`.
+
+## Deployment
+
+### Firebase Hosting
+
+1. Build the project:
+   ```bash
+   npm run build
+   ```
+2. Deploy to Firebase:
+   ```bash
+   npx firebase login
+   npx firebase deploy
+   ```
+
+## GitHub Setup
+
+To push this project to a new GitHub repository:
+
+1. Create a new repository on GitHub (skip README/gitignore initialization).
+2. Run these commands:
+   ```bash
+   git remote add origin <YOUR_REPO_URL>
+   git branch -M main
+   git push -u origin main
+   ```
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
